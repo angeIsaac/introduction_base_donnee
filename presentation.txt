@@ -1,0 +1,47 @@
+    PRESENTATION DE NOSQL ET SQL
+  
+  I- NOSQL
+
+    MongoDB est une base de données NoSQL open-source, orientée document.
+Contrairement aux bases de données relationnelles, MongoDB ne repose pas sur une structure de table, mais utilise un mécanisme de stockage différent.
+Les documents dans MongoDB sont similaires à des objets JSON, composés de paires clé-valeur.
+MongoDB stocke ces documents dans des collections, qui sont analogues aux tables dans les bases de données relationnelles.
+Il offre des performances élevées grâce à la prise en charge des modèles de données intégrés et des index pour des requêtes plus rapides.
+La redondance des données est assurée par les ensembles de réplicas, qui maintiennent le même ensemble de données sur plusieurs serveurs.
+MongoDB prend également en charge la scalabilité horizontale via le sharding, qui distribue les données sur un cluster de machines.
+Enfin, MongoDB propose plusieurs moteurs de stockage, notamment WiredTiger et In-Memory1
+
+II- SQL
+
+      SQL est un langage standard pour accéder et manipuler des bases de données.
+Il signifie Structured Query Language (langage de requête structuré).
+SQL permet d’exécuter des requêtes sur une base de données, de récupérer des données, d’insérer des enregistrements, de mettre à jour des enregistrements et de supprimer des enregistrements.
+Il peut également créer de nouvelles bases de données, de nouvelles tables, des procédures stockées et des vues.
+Bien que SQL soit un standard ANSI/ISO, il existe différentes versions du langage. Cependant, elles prennent toutes en charge au moins les principales commandes (telles que SELECT, UPDATE, DELETE, INSERT, WHERE) de manière similaire.
+Pour construire un site web qui affiche des données à partir d’une base de données, vous aurez besoin d’un système de gestion de base de données relationnelle (RDBMS), d’un langage de script côté serveur (comme PHP ou ASP), de SQL pour récupérer les données et d’HTML/CSS pour styliser la page.
+Les données dans un RDBMS sont stockées dans des objets de base de données appelés tables. Chaque table est composée de colonnes et de lignes.
+Par exemple, regardez la table “Customers” : SELECT * FROM Customers;
+
+
+III- MongoDB vs SQL
+
+     
+Modèle de données :
+        MongoDB est une base de données orientée documents. Les données sont stockées dans des collections sous forme de documents BSON (inspirés du format JSON). 
+        Chaque document peut avoir un nombre variable de champs, ce qui offre une grande flexibilité.
+        SQL, en revanche, utilise un modèle relationnel avec des tables et des colonnes. Les données sont structurées et doivent correspondre à un schéma prédéfini.
+Langage de requête :
+            MongoDB utilise le MongoDB Query Language (MQL), basé sur JavaScript, pour les requêtes. Il n’utilise pas SQL.
+            SQL utilise le langage SQL pour les requêtes.
+Évolutivité :
+        MongoDB prend en charge l’évolutivité horizontale, ce qui signifie que les données peuvent être réparties
+        sur plusieurs serveurs pour améliorer la disponibilité et les performances.
+        SQL est généralement mis à l’échelle verticalement, en ajoutant plus de ressources à un seul serveur.
+Transactions et intégrité des données :
+        MongoDB ne prend pas en charge les transactions JOIN et Global.
+        SQL (comme MySQL) prend en charge les transactions ACID (Atomicité, Cohérence, Isolation, Durabilité).
+Domaines d’application :
+        MongoDB est adapté aux applications avec des données non structurées, telles que les applications Web modernes, les applications 
+        mobiles et les systèmes de gestion de contenu.
+        SQL est souvent utilisé pour les applications avec des ensembles de données structurées, comme les systèmes de gestion d’inventaire, 
+        les systèmes financiers et les applications d’entreprise123.
